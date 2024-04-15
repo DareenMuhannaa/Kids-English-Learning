@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".QuizActivity">
+
+
+    <TextView
+        android:id="@+id/total_question"
+        android:layout_width="364dp"
+        android:layout_height="78dp"
+        android:gravity="center"
+        android:text="Guess The Answer ;)"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/choices_layout"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="62dp"
+        android:text="question1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/choices_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ans_A"
+            android:layout_width="174dp"
+            android:layout_height="68dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans A"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_B"
+            android:layout_width="180dp"
+            android:layout_height="64dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans B"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_C"
+            android:layout_width="181dp"
+            android:layout_height="66dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans C"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_D"
+            android:layout_width="178dp"
+            android:layout_height="66dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="AnsD"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="142dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/choices_layout"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="26dp"
+        android:text="Submit" />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".logInActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="280dp"
+        android:layout_height="155dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        app:srcCompat="@drawable/student" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="LOG IN"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="354dp"
+        android:maxLines="1"
+
+        android:layout_height="62dp"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:hint="Username .." />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="346dp"
+        android:layout_height="82dp"
+        android:maxLines="1"
+
+        android:layout_marginLeft="30dp"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:hint="password .." />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="0dp"
+            android:layout_height="73dp"
+            android:layout_weight="1"
+
+            android:text="LogIn" />
+
+        <Button
+            android:id="@+id/registerbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Regestier" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
